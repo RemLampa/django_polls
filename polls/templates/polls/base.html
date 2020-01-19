@@ -1,0 +1,19 @@
+{% load static %}
+<html>
+  <head>
+    <title>Django Polls</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+  </head>
+
+  <body>
+    <heading>
+    <h1><a href="{% url 'polls:index' %}">Django Polls</a></h1>
+    </heading>
+
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+
+  </body>
+</html>
